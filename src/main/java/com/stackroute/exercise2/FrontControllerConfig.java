@@ -10,11 +10,11 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 public class FrontControllerConfig extends AbstractAnnotationConfigDispatcherServletInitializer
-{
+{                                           //Extends AbstractAnnotationConfigDispatcherServletInitializer
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{Config.class};
+        return new Class[]{Config.class};       //returns Config
     }
 
     @Override
