@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+@Controller                             //Controller which handles the requests
 public class UserController {
-    @RequestMapping(value="login")
+    @RequestMapping(value="login")      //Maps the requests matching login
     public ModelAndView print(@ModelAttribute("user") User user, Model model)
     {
 
     ModelAndView modelAndView=new ModelAndView();
     model.addAttribute("user",user);
-        modelAndView.setViewName("display");
+        modelAndView.setViewName("display");        //sets the view name
     return modelAndView;
     }
 }
