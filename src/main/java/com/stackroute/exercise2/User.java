@@ -6,19 +6,19 @@ import org.springframework.stereotype.Component;
 public class User {
     private String name;
     private String password;
-    public User(String name, String password) {
+    public User(String name, String password) {     //Parameterized constructor
         this.name = name;
         this.password = password;
     }
 
-    public User() {
+    public User() {     //Default constructor
     }
 
-    public String getName() {
+    public String getName() {       //getter()
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) {      //setter()
         this.name = name;
     }
 
