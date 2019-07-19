@@ -4,6 +4,6 @@ isELIgnored="false"
 %>
 <html>
 <body>
-<p>Welcome ${user.name} to Stackroute </p>
+<p>Welcome ${user.name} to Stackroute </p>    <!-- Displays the paragragh content in user view--!>
 </body>
 </html>
