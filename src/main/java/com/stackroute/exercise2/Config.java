@@ -10,14 +10,14 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"com.stackroute"})
+@ComponentScan(basePackages = {"com.stackroute"})       //scans the components in the given packages
 
 public class Config extends WebMvcConfigurerAdapter {
     @Bean
-    public ViewResolver viewResolver() {
+    public ViewResolver viewResolver() {        //Bean creation for ViewResolver
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/");
-        viewResolver.setSuffix(".jsp");
+        viewResolver.setSuffix(".jsp");     //Sets prefix and suffix
         return viewResolver;
 
     }
